@@ -110,6 +110,9 @@
   align-items: flex-start;
   background: $astronaut;
   min-height: 100vh;
+  .skill-list {
+    align-items: flex-start;
+  }
   .quote {
     color: white;
     font-family: $primary-font-family;
@@ -159,11 +162,6 @@
     font-size: 2rem;
   }
   .skill-list {
-    height: 65%;
-    .skills-left,
-    .skills-right {
-      height: 100%;
-    }
     .skills-right {
       margin-top: 2rem;
       @include lg {
@@ -223,6 +221,7 @@
       margin-top: 1rem;
       padding: 1rem;
       position: relative;
+      text-decoration: none;
       &:hover {
         .work-name,
         .job-description {
@@ -271,6 +270,7 @@
       .job-description {
         font-family: $primary-font-family;
         position: relative;
+        text-align: center;
         transition: all .5s cubic-bezier(0.420, 0.000, 1.000, 1.000);
         z-index: 2;
       }
